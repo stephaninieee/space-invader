@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    flex-direction: column;
+}
+
+h2 {
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+
+.left-container, .right-container {
+    flex: 1;
+}
+
+h6 {
+    color: white;
+    text-align: left;
+}
+
+p {
+    position: absolute;
+    z-index: 10;
+    color: white;
+    left: 30%;
+    top: 70px;
+    transform: translateX(-50%);
+}
+
+canvas {
+    border: 1px solid white;
+    display: block;
+}
+
+div {
+    position: relative;
+}
+h3{
+    color :white
+}
+.table {
+    width: 80%; /* 設置表格寬度 */
+    margin: auto; /* 水平居中 */
+    border-collapse: collapse; /* 合併邊框 */
+    border: 1px solid white; /* 設置邊框 */
+}
+
+.table th, .table td {
+    border: 1px solid white; /* 設置單元格邊框 */
+    padding: 6px; /* 設置內邊距 */
+    text-align: left; /* 文字靠左對齊 */
+    color: white; /* 文字顏色 */
+}
+
+.table th {
+    background-color: #333; /* 表頭背景色 */
+}
+
+.table th, .table td {
+    white-space: nowrap; /* 防止文字折行 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table tr:nth-child(even) {
+    background-color: #444; /* 偶數行背景色 */
+}
